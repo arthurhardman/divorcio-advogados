@@ -1,0 +1,22 @@
+<div class="logo">
+  <i class="icon fas fa-arrow-left mr-5" (click)="onClickNavigateByCardapio()"></i>
+  <img src="assets/img/imgFromSite/logo.png" alt="Logo Pizzaria">
+</div>
+
+<nav>
+  <ul class="nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'pizzas'" (click)="selectTab('pizzas')">Pizzas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="selectedTab === 'bebidas'" (click)="selectTab('bebidas')">Bebidas</a>
+    </li>
+  </ul>
+</nav>
+
+<ng-container *ngIf="selectedTab === 'pizzas'">
+  <app-pizza></app-pizza>
+</ng-container>
+<ng-container *ngIf="selectedTab === 'bebidas'">
+  <app-bebida></app-bebida>
+</ng-container>

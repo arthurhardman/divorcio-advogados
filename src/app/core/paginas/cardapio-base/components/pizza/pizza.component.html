@@ -1,0 +1,34 @@
+<div *ngIf="!selectedPizza" class="body">
+  <div class="listagem" *ngFor="let pizza of pizzas">
+    <div class="detalhes">
+      <div class="foto-pizza">
+        <img [src]="pizza.Foto" alt="FotoPizza" />
+      </div>
+      <div class="pizza">
+        <h4>{{ pizza.Nome }}</h4>
+        <p>{{ pizza.Componentes }}</p>
+        <p>{{ pizza.Preco }}</p>
+      </div>
+    </div>
+    <div class="seta">
+      <a (click)="openPizzaDetails(pizza)"><i class="icon fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedPizza" class="pizza-detalhes">
+  <div class="card">
+    <div class="card-header">
+      <h5>{{ selectedPizza.Preco }}</h5>
+      <h3>{{ selectedPizza.Nome }}</h3>
+    </div>
+    <div class="card-body">
+      <img [src]="selectedPizza.Foto" alt="FotoPizza" />
+        <p class="componentes"><strong>Componentes:</strong></p>
+        <p>{{ selectedPizza.Componentes }}</p>
+    </div>
+    <div class="card-footer">
+      <button class="btn-voltar" (click)="closePizzaDetails()">Voltar</button>
+    </div>
+  </div>
+</div>

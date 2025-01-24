@@ -1,0 +1,112 @@
+.body {
+  padding: 20px;
+}
+
+.listagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detalhes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.pizza {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.pizza h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pizza p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.foto-pizza {
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+}
+
+.foto-pizza img {
+  width: 50px;
+  height: 50px;
+  overflow: cover;
+  border: 1px transparent #ddd;
+  border-radius: 5px;
+}
+
+.seta i {
+  color: #000;
+}
+
+.listagem:last-child {
+  border-bottom: none;
+}
+
+.pizza-detalhes {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header h5 {
+  text-align: left;
+  color: rgb(139, 139, 139);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-voltar {
+  background-color: #013A58;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-voltar:hover {
+  background-color: #002C42;
+}
+
+.componentes {
+  text-align: left;
+}

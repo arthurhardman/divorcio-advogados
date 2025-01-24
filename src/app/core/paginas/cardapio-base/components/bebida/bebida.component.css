@@ -1,0 +1,39 @@
+.body {
+  padding: 20px;
+}
+
+.listagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detalhes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bebida {
+  margin-left: 10px;
+}
+
+.bebida h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.bebida p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.seta i {
+  color: #000;
+}
+
+.listagem:last-child {
+  border-bottom: none;
+}
